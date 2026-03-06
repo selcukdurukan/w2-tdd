@@ -1,5 +1,6 @@
 package com.example.w2.tdd.dto;
 
+import jakarta.annotation.Nullable;
 import jakarta.validation.constraints.NotEmpty;
 
 public record SavePostRequestDto(
@@ -7,6 +8,7 @@ public record SavePostRequestDto(
         @NotEmpty
         String title,
         String body,
+        @Nullable
         Integer version
 ) {
 
