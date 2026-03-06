@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: w2-tdd
+  sql:
+    init:
+      mode: always
+
+server:
+  port: 80
